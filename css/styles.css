@@ -173,9 +173,9 @@ button {
 .header-item {
 }
 .header-link {
+  position: relative;
   font-weight: 500;
   color: var(--primary-txt-cl);
-  position: relative;
   transition: color var(--trns-hov);
 }
 .header-link:hover,
@@ -990,6 +990,7 @@ button {
 }
 .content-list {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 48px 24px;
 }
