@@ -740,13 +740,11 @@ button {
 /* Footer */
 .footer {
   background-color: var(--primary-bg-cl);
-  padding-top: 96px;
-  padding-bottom: 96px;
+  padding: 96px 15px 96px 15px;
 }
 @media screen and (min-width: 1200px) {
   .footer {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding: 100px 15px 100px 15px;
   }
 }
 .footer-container {
@@ -906,11 +904,10 @@ button {
   margin-left: 16px;
 }
 .subscribe-input {
-  width: 100%;
+  width: 398px;
   height: 40px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
-  margin-right: 24px;
   background-color: var(--primary-txt-cl);
   padding: 8px 16px;
   outline: none;
@@ -919,6 +916,7 @@ button {
 @media screen and (min-width: 768px) {
   .subscribe-input {
     width: 264px;
+    margin-right: 24px;
     margin-bottom: 0px;
   }
 }
@@ -927,14 +925,35 @@ button {
 
 /* Filter Section */
 .filter-section {
-  padding-bottom: 120px;
-  padding-top: 96px;
+  padding: 48px 16px;
+}
+@media screen and (min-width: 768px) {
+  .filter-section {
+    padding: 64px 16px 96px 16px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filter-section {
+    padding: 96px 16px 120px 16px;
+  }
 }
 .filter-list {
-  margin-bottom: 72px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 24px;
+  gap: 16px 24px;
+  margin-bottom: 48px;
+}
+@media screen and (min-width: 768px) {
+  .filter-list {
+    margin-bottom: 64px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filter-list {
+    margin-bottom: 72px;
+  }
 }
 .filter-item {
 }
@@ -974,10 +993,32 @@ button {
   flex-wrap: wrap;
   gap: 48px 24px;
 }
+@media screen and (min-width: 768px) {
+  .content-list {
+    gap: 72px 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .content-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+  }
+}
 
 .content-item {
-  width: calc((100% - 24px * 2) / 3);
+  width: 360px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+@media screen and (min-width: 768px) {
+  .content-item {
+    width: calc((100% - 24px * 1) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .content-item {
+    width: calc((100% - 24px * 2) / 3);
+  }
 }
 .content-link {
   transition: box-shadow var(--trns-hov);
