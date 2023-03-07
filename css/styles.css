@@ -48,8 +48,8 @@ p {
   /* Phone screen >= 320px */
   min-width: 320px;
   max-width: 428px;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -62,7 +62,7 @@ p {
 @media screen and (min-width: 1200px) {
   .container {
     /* Desctop screen >= 1158px */
-    max-width: 1200px;
+    max-width: 1158px;
   }
 }
 body {
@@ -273,7 +273,7 @@ button {
 /* Hero */
 .hero-section {
   color: var(--light-txt-cl);
-  padding: 112px 16px 112px 16px;
+  padding: 112px 0px;
   width: 428px;
   height: 432px;
   margin-left: auto;
@@ -352,14 +352,14 @@ button {
 
 @media screen and (min-width: 768px) {
   .hero-section {
-    padding: 111px 16px 108px 16px;
+    padding: 112px 0px;
     width: 768px;
     height: 434px;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero-section {
-    padding: 188px 16px 188px 16px;
+    padding: 188px 0px;
     width: 1440px;
     height: 600px;
   }
@@ -405,7 +405,7 @@ button {
 
 /* Our advantages */
 .features-section {
-  padding: 96px 16px 96px 16px;
+  padding: 96px 0px;
 }
 @media screen and (min-width: 1200px) {
   .features-section {
@@ -418,7 +418,7 @@ button {
 .features-list {
   display: flex;
   flex-wrap: wrap;
-  /* flex-direction: row; */
+  justify-content: center;
   gap: 72px 24px;
   margin: 0;
 }
@@ -494,7 +494,7 @@ button {
   padding: 24px 100px;
   margin-bottom: 8px;
 }
-@media screen and (min-width: 468px) {
+@media screen and (min-width: 320px) {
   .features-icons-item {
     display: none;
   }
@@ -521,7 +521,7 @@ button {
 .work-section {
   padding-top: 0px;
 }
-@media screen and (min-width: 428px) {
+@media screen and (min-width: 320px) {
   .work-section {
     display: none;
   }
@@ -544,8 +544,7 @@ button {
   text-transform: capitalize;
   color: var(--primary-txt-cl);
   margin-bottom: 72px;
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
 .work-container {
 }
@@ -584,8 +583,7 @@ button {
   line-height: calc(40 / 36);
   text-transform: capitalize;
   color: var(--primary-txt-cl);
-  display: flex;
-  justify-content: center;
+  text-align: center;
   margin-bottom: 72px;
 }
 
@@ -611,9 +609,13 @@ button {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
   padding-bottom: 32px;
-  width: calc((100% - 24px * 1) / 1-1);
+  width: calc((100% - 72px * 1) / 1);
 }
-
+@media screen and (min-width: 768px) {
+  .team-item {
+    width: calc((100% - 24px * 1) / 2);
+  }
+}
 @media screen and (min-width: 1200px) {
   .team-item {
     width: calc((100% - 24px * 3) / 4);
@@ -671,10 +673,14 @@ button {
 }
 @media screen and (min-width: 1200px) {
   .customer-section {
-    padding: 120px 16px 120px 16px;
+    padding: 120px 0px;
     margin-right: auto;
     margin-left: auto;
   }
+}
+.section-container {
+  padding-left: 0px;
+  padding-right: 0px;
 }
 .customer-section-title {
   font-weight: 700;
@@ -682,8 +688,7 @@ button {
   line-height: calc(40 / 36);
   text-transform: capitalize;
   color: var(--primary-txt-cl);
-  display: flex;
-  justify-content: center;
+  text-align: center;
   margin-bottom: 72px;
 }
 .customer-list {
@@ -694,10 +699,9 @@ button {
   gap: 72px 16px;
 }
 @media screen and (min-width: 768px) {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  gap: 72px 24px;
+  .customer-list {
+    gap: 72px 24px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .customer-list {
@@ -740,11 +744,11 @@ button {
 /* Footer */
 .footer {
   background-color: var(--primary-bg-cl);
-  padding: 96px 15px 96px 15px;
+  padding: 96px 0px;
 }
 @media screen and (min-width: 1200px) {
   .footer {
-    padding: 100px 15px 100px 15px;
+    padding: 100px 0px;
   }
 }
 .footer-container {
@@ -753,9 +757,15 @@ button {
   align-items: baseline;
   justify-content: center;
 }
+@media screen and (min-width: 768px) {
+  .footer-container {
+    justify-content: flex-start;
+    margin-right: 108px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer-container {
-    justify-content: center;
+    flex-wrap: nowrap;
   }
 }
 .footer-left {
@@ -860,6 +870,12 @@ button {
 .footer-subscribe {
   display: flex;
   flex-direction: column;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .footer-subscribe {
+    width: auto;
+  }
 }
 .subscribe-title {
   font-weight: 500;
@@ -871,6 +887,19 @@ button {
 @media screen and (min-width: 768px) {
   .subscribe-title {
     text-align: start;
+  }
+}
+.subscribe-form {
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .subscribe-form {
+    display: block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscribe-form {
+    display: flex;
   }
 }
 .subscribe-button {
@@ -904,7 +933,7 @@ button {
   margin-left: 16px;
 }
 .subscribe-input {
-  width: 398px;
+  width: 100%;
   height: 40px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -1351,7 +1380,9 @@ Modal Window
 .mobile-menu-link:focus {
   color: var(--accent-bg-cl);
 }
-
+.contact-soc-mob {
+  margin-bottom: auto;
+}
 .address-mob-list {
   display: flex;
   flex-direction: column;
