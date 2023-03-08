@@ -170,8 +170,6 @@ button {
     gap: 40px;
   }
 }
-.header-item {
-}
 .header-link {
   position: relative;
   font-weight: 500;
@@ -267,8 +265,6 @@ button {
   .header-menu-btn {
     display: none;
   }
-}
-.header-menu-icon {
 }
 /* Hero */
 .hero-section {
@@ -414,8 +410,6 @@ button {
   }
 }
 
-.features-container {
-}
 .features-list {
   display: flex;
   flex-wrap: wrap;
@@ -534,8 +528,6 @@ button {
   margin-bottom: 72px;
   text-align: center;
 }
-.work-container {
-}
 .work-list {
   display: flex;
   flex-wrap: wrap;
@@ -636,8 +628,6 @@ button {
   justify-content: center;
   gap: 24px;
 }
-.socials-item {
-}
 .socials-link {
   display: flex;
   align-items: center;
@@ -653,8 +643,7 @@ button {
 .socials-link:focus {
   background-color: var(--accent-bg-cl);
 }
-.socials-icon {
-}
+
 /* Customers */
 .customer-section {
   padding: 96px 0px;
@@ -663,8 +652,6 @@ button {
   .customer-section {
     padding: 120px 0px;
   }
-}
-.section-container {
 }
 .customer-section-title {
   font-weight: 700;
@@ -693,8 +680,6 @@ button {
     padding-left: 0;
     padding-right: 0;
   }
-}
-.customer-item {
 }
 .customer-link {
   width: 135px;
@@ -753,12 +738,6 @@ button {
   align-items: baseline;
   justify-content: center;
 }
-/* @media screen and (min-width: 768px) {
-  .footer-container {
-    justify-content: flex-start;
-    margin-left: 108px;
-  }
-} */
 @media screen and (min-width: 1200px) {
   .footer-container {
     flex-wrap: nowrap;
@@ -860,9 +839,6 @@ button {
 .footer-link:focus {
   background-color: var(--footer-bg-hov-cl);
 }
-.footer-icon {
-}
-
 .footer-subscribe {
   display: flex;
   flex-direction: column;
@@ -950,28 +926,29 @@ button {
 
 /* Filter Section */
 .filter-section {
-  padding: 48px 16px;
+  padding: 48px 0px;
 }
 @media screen and (min-width: 768px) {
   .filter-section {
-    padding: 64px 16px 96px 16px;
+    padding: 64px 0px 96px 0px;
   }
 }
 @media screen and (min-width: 1200px) {
   .filter-section {
-    padding: 96px 16px 120px 16px;
+    padding: 96px 0px 120px 0px;
   }
 }
 .filter-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 16px 24px;
+  gap: 16px 10px;
   margin-bottom: 48px;
 }
 @media screen and (min-width: 768px) {
   .filter-list {
     margin-bottom: 64px;
+    gap: 16px 24px;
   }
 }
 
@@ -979,8 +956,6 @@ button {
   .filter-list {
     margin-bottom: 72px;
   }
-}
-.filter-item {
 }
 .filter-btn {
   cursor: pointer;
@@ -1009,10 +984,6 @@ button {
 }
 
 /* Content Section */
-.content-section {
-}
-.content-container {
-}
 .content-list {
   display: flex;
   justify-content: center;
