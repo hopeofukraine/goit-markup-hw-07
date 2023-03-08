@@ -986,7 +986,6 @@ button {
 /* Content Section */
 .content-list {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
   gap: 48px 24px;
 }
