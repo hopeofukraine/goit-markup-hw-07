@@ -410,7 +410,7 @@ button {
 }
 @media screen and (min-width: 1200px) {
   .features-section {
-    padding: 120px 16px 120px 16px;
+    padding: 120px 0px;
   }
 }
 
@@ -431,19 +431,6 @@ button {
   .features-list {
   }
 }
-/* .list-item {
-  width: 396px;
-}
-@media screen and (min-width: 768px) {
-  .list-item {
-    width: 356px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .list-item {
-    width: 264px;
-  }
-} */
 .features-title {
   display: flex;
   justify-content: center;
@@ -671,19 +658,13 @@ button {
 /* Customers */
 .customer-section {
   padding: 96px 0px;
-  margin-right: auto;
-  margin-left: auto;
 }
 @media screen and (min-width: 1200px) {
   .customer-section {
     padding: 120px 0px;
-    margin-right: auto;
-    margin-left: auto;
   }
 }
 .section-container {
-  padding-left: 0px;
-  padding-right: 0px;
 }
 .customer-section-title {
   font-weight: 700;
@@ -703,8 +684,6 @@ button {
 }
 @media screen and (min-width: 768px) {
   .customer-list {
-    padding-left: 15px;
-    padding-right: 15px;
     gap: 72px 24px;
   }
 }
@@ -715,8 +694,10 @@ button {
     padding-right: 0;
   }
 }
+.customer-item {
+}
 .customer-link {
-  width: 190px;
+  width: 135px;
   height: 88px;
   border: 1px solid var(--company-fl-cl);
   border-radius: 4px;
@@ -724,8 +705,16 @@ button {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 110px 56px;
-  padding: 16px 40px;
+  padding: 16px 16px;
   transition: fill var(--trns-hov), border var(--trns-hov);
+}
+@media screen and (min-width: 428px) {
+  .customer-link {
+    width: 190px;
+    height: 88px;
+    background-size: 110px 56px;
+    padding: 16px 40px;
+  }
 }
 @media screen and (min-width: 768px) {
   .customer-link {
@@ -881,7 +870,7 @@ button {
 }
 @media screen and (min-width: 768px) {
   .footer-subscribe {
-    width: auto;
+    width: 500px;
   }
 }
 .subscribe-title {
@@ -1284,6 +1273,9 @@ Modal Window
   letter-spacing: 0.04em;
   color: #757575;
   user-select: none;
+}
+.agreement-link {
+  color: var(--accent-txt-cl);
 }
 .modal-form-link {
 }
